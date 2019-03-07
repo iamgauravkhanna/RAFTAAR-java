@@ -68,3 +68,10 @@ https://github.com/atinfo/awesome-test-automation/blob/master/java-test-automati
 https://github.com/atinfo/awesome-test-automation/blob/master/javascript-test-automation.md
 
 https://github.com/atinfo/awesome-test-automation/blob/master/python-test-automation.md
+
+https://help.github.com/en/articles/adding-a-file-to-a-repository-using-the-command-line
+
+git clone "Repo URL"
+git add .
+git commit - m "Comments"
+git push origin
