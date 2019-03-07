@@ -2,6 +2,8 @@ package utils;
 
 import org.apache.log4j.Logger;
 
+import utils.listener.MyITestListener;
+
 public class LogUtils {
 
 	// Initialize Log4j logs
@@ -49,7 +51,7 @@ public class LogUtils {
 
 		try
 		{
-			ListenerUtil.getInstance().info(message);
+			MyITestListener.getInstance().info(message);
 		}
 		catch (Exception e) {
 			
