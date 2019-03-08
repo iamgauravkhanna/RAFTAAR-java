@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import utils.logging.LogUtils;
+
 /**
  * This class will read the properties file which holds the data in key,value
  * pair

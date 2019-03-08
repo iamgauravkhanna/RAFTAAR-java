@@ -2,6 +2,8 @@ package utils;
 
 import java.util.HashMap;
 
+import utils.logging.LogUtils;
+
 public class TestDataWriter {
 
 	private static TestDataWriter instance = null;

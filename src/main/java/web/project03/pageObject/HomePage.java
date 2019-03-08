@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.BasePage;
-import utils.LogUtils;
+import utils.logging.LogUtils;
 
 public class HomePage extends BasePage {
 

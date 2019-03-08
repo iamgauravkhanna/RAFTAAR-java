@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 
-import utils.LogUtils;
+import utils.logging.LogUtils;
 
 import java.io.*;
 import java.util.Calendar;

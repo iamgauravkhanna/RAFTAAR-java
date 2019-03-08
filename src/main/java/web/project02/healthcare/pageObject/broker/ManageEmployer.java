@@ -3,7 +3,7 @@ package web.project02.healthcare.pageObject.broker;
 import utils.BasePage;
 import utils.BaseTest;
 import utils.DataDictionary;
-import utils.JavaUtil;
+import utils.java.JavaUtil;
 import web.project02.healthcare.pageObject.uiMap.Broker;
 
 import org.openqa.selenium.By;

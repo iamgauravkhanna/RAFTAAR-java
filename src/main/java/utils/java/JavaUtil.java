@@ -1,4 +1,4 @@
-package utils;
+package utils.java;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import utils.BasePage;
+import utils.DataDictionary;
 import utils.excel.ExcelUtils;
+import utils.logging.LogUtils;
 
 public class JavaUtil {
 

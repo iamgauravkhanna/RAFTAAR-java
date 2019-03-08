@@ -1,6 +1,7 @@
 package web.project02.healthcare;
 
 import utils.*;
+import utils.logging.LogUtils;
 import web.project02.healthcare.pageObject.broker.*;
 
 import org.testng.annotations.BeforeMethod;

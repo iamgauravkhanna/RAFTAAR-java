@@ -3,8 +3,8 @@ package web.project03.pageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import utils.LogUtils;
 import utils.BasePage;
+import utils.logging.LogUtils;
 
 public class AdminPage extends BasePage {
 

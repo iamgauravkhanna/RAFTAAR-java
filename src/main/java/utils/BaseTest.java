@@ -9,6 +9,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
+import utils.java.JavaUtil;
+import utils.logging.LogUtils;
+
 public class BaseTest {
 
 	public WebDriver webDriverObj ;

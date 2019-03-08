@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import utils.logging.LogUtils;
+
 public class DriverFactory {
 
 	private static Logger logger = LogManager.getLogger(DriverFactory.class);

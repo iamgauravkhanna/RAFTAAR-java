@@ -24,6 +24,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import utils.java.JavaUtil;
+import utils.logging.LogUtils;
+
 /**
  * This is base class for web tests containing all the methods possible on UI.
  * 

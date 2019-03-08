@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.BasePage;
-import utils.JavaUtil;
-import utils.LogUtils;
+import utils.java.JavaUtil;
+import utils.logging.LogUtils;
 import web.project02.healthcare.pageObject.employer.SignUp;
 import web.project02.healthcare.pageObject.uiMap.Auth0LogIn;
 import web.project02.healthcare.pageObject.uiMap.Employer;

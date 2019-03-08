@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import utils.BasePage;
 import utils.BrowserFactory;
-import utils.LogUtils;
+import utils.logging.LogUtils;
 
 public class WebKeywordsExample extends BasePage {
 

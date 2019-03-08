@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import utils.LogUtils;
+import utils.logging.LogUtils;
 
 public class DatabaseUtils {
 

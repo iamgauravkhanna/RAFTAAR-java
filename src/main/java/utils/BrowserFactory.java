@@ -24,6 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.ios.IOSDriver;
+import utils.logging.LogUtils;
 
 public class BrowserFactory {
 

@@ -8,7 +8,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import utils.DataDictionary;
-import utils.JavaUtil;
+import utils.java.JavaUtil;
 
 public class ExtentManager {
 
