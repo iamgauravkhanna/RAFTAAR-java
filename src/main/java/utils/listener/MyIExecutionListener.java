@@ -2,18 +2,21 @@ package utils.listener;
 
 import org.testng.IExecutionListener;
 
+import utils.logging.LogUtils;
+
 public class MyIExecutionListener implements IExecutionListener {
+
+	private long startTime;
 
 	@Override
 	public void onExecutionStart() {
-		// TODO Auto-generated method stub
-		
+		startTime = System.currentTimeMillis();
+		LogUtils.info("TestNG is going to start");
 	}
 
 	@Override
 	public void onExecutionFinish() {
-		// TODO Auto-generated method stub
-		
+		LogUtils.info("TestNG has finished, took around " + (System.currentTimeMillis() - startTime) + "ms");
 	}
 
 }

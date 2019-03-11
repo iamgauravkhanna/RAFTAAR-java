@@ -6,6 +6,7 @@ import java.util.HashMap;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
@@ -110,6 +111,12 @@ public class BaseTest {
 
 		LogUtils.info("====== Finally All Tests Are Executed ======");
 
+	}
+	
+	@AfterSuite
+	public void stepsToBeDoneAfterSuite() {
+		
+		JavaUtil.printHashMapValues(testDataMap);
 	}
 
 }

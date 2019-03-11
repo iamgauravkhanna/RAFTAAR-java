@@ -2,7 +2,7 @@ package utils.logging;
 
 import org.apache.log4j.Logger;
 
-import utils.listener.MyITestListener;
+import utils.listener.MyITestListener2;
 
 public class LogUtils {
 
@@ -51,10 +51,15 @@ public class LogUtils {
 
 		try
 		{
-			MyITestListener.getInstance().info(message);
+			MyITestListener2.getInstance().info(message);
 		}
 		catch (Exception e) {
 			
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+			
+			System.out.println("Exception Occured : " + e);
+			
+			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 			
 		}
 
