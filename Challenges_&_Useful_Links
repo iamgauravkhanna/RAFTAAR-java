@@ -73,7 +73,7 @@ https://help.github.com/en/articles/adding-a-file-to-a-repository-using-the-comm
 
 git clone "Repo URL"
 git add .
-git commit - m "Comments"
+git commit -m "Comments"
 git push origin
 
 https://www.vogella.com/tutorials/EclipseGit/article.html
