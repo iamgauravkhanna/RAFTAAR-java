@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
+import utils.TestDataWriter;
 import web.project03.pageObject.AdminPage;
 import web.project03.pageObject.DashBoardPage;
 import web.project03.pageObject.HomePage;
@@ -18,13 +19,15 @@ public class Feature001 extends BaseTest {
 	@Test
 	public void TestMethod001() {
 
-		homePageObj = new HomePage(webDriverObj);
+		homePageObj = new HomePage(webDriverPool.get());
 
-		adminPageObj = new AdminPage(webDriverObj);
+		adminPageObj = new AdminPage(webDriverPool.get());
 
-		dashBoardObj = new DashBoardPage(webDriverObj);
+		dashBoardObj = new DashBoardPage(webDriverPool.get());
 
 		homePageObj.openBrowser();
+		
+		homePageObj.closePopUpMenus();
 
 		homePageObj.verifyHomeFrontEndPresent();
 
@@ -35,6 +38,8 @@ public class Feature001 extends BaseTest {
 		adminPageObj.login();
 
 		dashBoardObj.validateHomeTiles();
+		
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
 
 	}
 }

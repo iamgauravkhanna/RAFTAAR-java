@@ -11,6 +11,8 @@ public class HomePage extends BasePage {
 	By homeFrontEndText = By.xpath("//*[contains(text(),'Front-End')]");
 
 	By AdminLink = By.xpath("//*[contains(text(),'http://www.phptravels.net/admin')]");
+	
+	By PopUpNoThanksText = By.xpath("//button[@id=\"onesignal-popover-cancel-button\"]");
 
 	public HomePage(WebDriver driverObj) {
 
@@ -26,7 +28,7 @@ public class HomePage extends BasePage {
 
 	public void openBrowser() {
 		
-		LogUtils.info("Opening Browser");
+		LogUtils.logStep("Opening Browser");
 
 		openBrowser("http://phptravels.com/demo/");
 
@@ -42,6 +44,12 @@ public class HomePage extends BasePage {
 
 		// switchToWindow("Administator Login");
 
+	}
+	
+	public void closePopUpMenus() {
+		
+		click(PopUpNoThanksText);
+		click(By.xpath("//div[@class='mc-closeModal']"));
 	}
 
 }
