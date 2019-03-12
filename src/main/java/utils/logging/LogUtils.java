@@ -2,7 +2,7 @@ package utils.logging;
 
 import org.apache.log4j.Logger;
 
-import utils.listener.MyITestListener2;
+import utils.listener.ExtentTestManager4;
 
 public class LogUtils {
 
@@ -47,21 +47,7 @@ public class LogUtils {
 
 		Log.info(message);
 
-		System.out.println("INFO : " + message);
-
-		try
-		{
-			MyITestListener2.getInstance().info(message);
-		}
-		catch (Exception e) {
-			
-			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-			
-			System.out.println("Exception Occured : " + e);
-			
-			System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-			
-		}
+		System.out.println(" *** INFO : " + message);
 
 	}
 
@@ -86,6 +72,24 @@ public class LogUtils {
 	public static void debug(String message) {
 
 		Log.debug(message);
+
+	}
+
+	public static void logStep(String message) {
+
+		Log.info(message);
+
+		System.out.println(" *** INFO : " + message);
+
+		try {
+
+			ExtentTestManager4.getTest().info(message);
+
+		} catch (Exception e) {
+
+			Log.error("Exception Occured : " + e);
+
+		}
 
 	}
 

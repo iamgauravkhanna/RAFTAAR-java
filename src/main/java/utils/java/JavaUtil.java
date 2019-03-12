@@ -15,7 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import utils.BasePage;
-import utils.DataDictionary;
+import utils.TestDataWriter;
 import utils.excel.ExcelUtils;
 import utils.logging.LogUtils;
 
@@ -73,7 +73,7 @@ public class JavaUtil {
 			
 			System.out.println("String not resolved. Using baseTestHashMapObj");
 
-			sub = new StrSubstitutor(DataDictionary.getInstance().getDataDictionary());
+			sub = new StrSubstitutor(TestDataWriter.getInstance().getDataDictionary());
 
 			resolvedString = sub.replace(templateString);
 

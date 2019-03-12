@@ -1,12 +1,9 @@
 package web.project01.automationpractice;
 
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
-import utils.DataDictionary;
-import utils.DriverFactory;
-import utils.DriverManager;
+import utils.TestDataWriter;
 import web.project01.automationpractice.pageObject.Home;
 
 /**
@@ -22,9 +19,12 @@ public class Feature001 extends BaseTest {
 	public void TC_001() {
 
 		homePageObj.set(new Home(webDriverPool.get()));
+		
 		homePageObj.get().openHomePage();
+		
 		homePageObj.get().clickContactUs();
-		DataDictionary.getInstance().getDataDictionary().put("TC_ID", "001");
+		
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
 
 	}
 
@@ -34,7 +34,7 @@ public class Feature001 extends BaseTest {
 		homePageObj.set(new Home(webDriverPool.get()));
 		homePageObj.get().openHomePage();
 		homePageObj.get().clickContactUs();
-		DataDictionary.getInstance().putKey("TC_ID", "002");
+		TestDataWriter.getInstance().putKey("TC_ID", "002");
 
 	}
 
@@ -44,7 +44,7 @@ public class Feature001 extends BaseTest {
 		homePageObj.set(new Home(webDriverPool.get()));
 		homePageObj.get().openHomePage();
 		homePageObj.get().clickContactUs();
-		DataDictionary.getInstance().getDataDictionary().put("TC_ID", "003");
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "003");
 
 	}
 

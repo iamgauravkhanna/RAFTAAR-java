@@ -1,6 +1,5 @@
 package utils;
 
-import java.io.File;
 import java.util.HashMap;
 
 import org.apache.log4j.PropertyConfigurator;
@@ -27,7 +26,7 @@ public class BaseTest {
 
 	public BaseTest() {
 
-		System.setProperty("current.date.time", JavaUtil.getTimeStamp());
+/*		System.setProperty("current.date.time", JavaUtil.getTimeStamp());
 
 		String fileSeperator = System.getProperty("file.separator");
 
@@ -36,58 +35,28 @@ public class BaseTest {
 
 		System.setProperty("logsDirectory", outputDirectory);
 
-		JavaUtil.createDirectory(outputDirectory);
+		JavaUtil.createDirectory(outputDirectory);*/
 
 		PropertyConfigurator.configure("log4j.properties");
-
-	}
-
-	private void createTestDataMap() {
-
-		File folder = new File("./src/main/resources/");
-
-		File[] listOfFiles = folder.listFiles();
-
-		for (int i = 0; i < listOfFiles.length; i++) {
-
-			if (listOfFiles[i].isFile()) {
-
-				LogUtils.info("File #" + i + " " + listOfFiles[i].getName());
-
-			} else if (listOfFiles[i].isDirectory()) {
-
-				LogUtils.info("Directory " + listOfFiles[i].getName());
-
-			}
-
-		}
 
 	}
 
 	@BeforeMethod
 	public void setUp() {
 
-		LogUtils.info("============ setUp() begins ============");
+		LogUtils.info("..................... setUp() begins .....................");
 
 		TestDataWriter.getInstance().putKey("logsDirectory", outputDirectory);
 
 		TestDataWriter.getInstance().putKey("User", "Gaurav.Khanna");
 
-		// createTestDataMap();
-
 		browserFactoryObj = new BrowserFactory();
 
 		webDriverPool.set(browserFactoryObj.getBrowser());
 
-		/*
-		 * if (DriverManager.getDriver() == null) {
-		 * 
-		 * DriverManager.setWebDriver(DriverFactory.createInstance()); }
-		 */
-
 		testDataMap.putAll(TestDataWriter.getInstance().getDataDictionary());
 
-		LogUtils.info("============ setUp() ends ============");
+		LogUtils.info("..................... setUp() ends .....................");
 
 	}
 
@@ -96,11 +65,11 @@ public class BaseTest {
 
 		TestDataWriter.getInstance().putAllKeys(testDataMap);
 
-		LogUtils.info("========= Closing Browser =========");
+/*		LogUtils.info("..................... Closing Browser .....................");
 
 		webDriverPool.get().manage().deleteAllCookies();
 
-		webDriverPool.get().quit();
+		webDriverPool.get().quit();*/
 
 		testDataMap.putAll(TestDataWriter.getInstance().getDataDictionary());
 
@@ -109,7 +78,7 @@ public class BaseTest {
 	@AfterTest
 	public void tearDown() {
 
-		LogUtils.info("====== Finally All Tests Are Executed ======");
+		LogUtils.info("..................... All Methods in Test Are Executed .....................");
 
 	}
 	

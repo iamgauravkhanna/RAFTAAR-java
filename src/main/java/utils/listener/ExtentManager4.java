@@ -11,7 +11,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import utils.java.JavaUtil;
 import utils.logging.LogUtils;
 
-public class ExtentManager {
+public class ExtentManager4 {
 
 	private static ExtentReports extent;
 
@@ -41,15 +41,15 @@ public class ExtentManager {
 		
 		System.out.println("Report File Path : " + reportFilepath);
 
-		String fileName = getReportPath(reportFilepath);
+		//String fileName = getReportPath(reportFilepath);
 
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportFileLocation);
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setTheme(Theme.STANDARD);
-		htmlReporter.config().setDocumentTitle("Uzio Automation");
+		htmlReporter.config().setDocumentTitle("Raftaar 4.0");
 		htmlReporter.config().setEncoding("utf-8");
-		htmlReporter.config().setReportName("Uzio Automation");
+		htmlReporter.config().setReportName("Raftaar 4.0");
 		htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
 		extent = new ExtentReports();
@@ -59,7 +59,7 @@ public class ExtentManager {
 
 		// specify project
 		// ! you must specify a project, other a "Default project will be used"
-		klov.setProjectName("Uzio");
+		klov.setProjectName("Raftaar 4.0");
 
 		// you must specify a reportName otherwise a default timestamp will be used
 		klov.setReportName(JavaUtil.getCurrentTimeStamp());
@@ -77,20 +77,28 @@ public class ExtentManager {
 		extent.setSystemInfo("OS", "Windows");
 		extent.setSystemInfo("AUT", "QA");
 
-		LogUtils.info(fileName);
+		//LogUtils.info(fileName);
 
 		return extent;
 	}
 
 	// Create the report path
 	public static String getReportPath(String path) {
+		
 		File testDirectory = new File(path);
+		
 		if (!testDirectory.exists()) {
+		
 			if (testDirectory.mkdir()) {
+			
 				System.out.println("Directory: " + path + " is created!");
+				
 				return reportFileLocation;
+			
 			} else {
+			
 				System.out.println("Failed to create directory: " + path);
+				
 				return System.getProperty("user.dir");
 			}
 		} else {
@@ -104,5 +112,5 @@ public class ExtentManager {
 		return reportFileLocation;
 
 	}
-
+	
 }

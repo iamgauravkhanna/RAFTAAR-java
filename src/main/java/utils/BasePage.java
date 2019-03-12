@@ -99,7 +99,7 @@ public class BasePage {
 		//
 		findElement(by).click();
 
-		LogUtils.info("Using click()");
+		LogUtils.logStep("Using click()");
 
 		//ListenerUtil.getInstance().fail("Oops.. Assertion Failed !!!");
 
@@ -121,7 +121,7 @@ public class BasePage {
 
 				opt.click();
 
-				LogUtils.info("Element clicked successfully");
+				LogUtils.logStep("Element clicked successfully");
 
 			}
 		}
@@ -192,7 +192,7 @@ public class BasePage {
 
 		webDriverObj.get(link);
 
-		LogUtils.info("Open Browser");
+		LogUtils.logStep("Open Browser");
 
 	}
 
@@ -201,10 +201,10 @@ public class BasePage {
 	 */
 	public void intializeDriver() {
 
-		if ((DataDictionary.getInstance().getKey("IsRemote").equalsIgnoreCase("No"))) {
+		if ((TestDataWriter.getInstance().getKey("IsRemote").equalsIgnoreCase("No"))) {
 
 			//
-			String browserName = DataDictionary.getInstance().getKey("Browser");
+			String browserName = TestDataWriter.getInstance().getKey("Browser");
 
 			//
 			LogUtils.info("Running Tests on Remote Browsers");
@@ -462,7 +462,7 @@ public class BasePage {
 			LogUtils.info(key + " => " + value);
 
 			//
-			DataDictionary.getInstance().putKey(key, value);
+			TestDataWriter.getInstance().putKey(key, value);
 
 		}
 
@@ -674,6 +674,8 @@ public class BasePage {
 
 	public void quitBrowser() {
 
+		LogUtils.logStep("Quiting Browser");
+		
 		webDriverObj.quit();
 
 	}

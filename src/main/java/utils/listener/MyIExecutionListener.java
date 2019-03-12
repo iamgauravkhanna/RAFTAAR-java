@@ -1,22 +1,39 @@
 package utils.listener;
 
+import java.io.File;
+
 import org.testng.IExecutionListener;
 
+import utils.java.JavaUtil;
 import utils.logging.LogUtils;
 
 public class MyIExecutionListener implements IExecutionListener {
 
 	private long startTime;
 
-	@Override
 	public void onExecutionStart() {
+
 		startTime = System.currentTimeMillis();
-		LogUtils.info("TestNG is going to start");
+		
+		System.setProperty("current.date.time", JavaUtil.getTimeStamp());
+
+		String outputDirectory = System.getProperty("user.dir") + File.separator + "test-results" + File.separator
+				+ "test-output_" + JavaUtil.getTimeStamp() + "_" + JavaUtil.generateRandomString();
+
+		System.setProperty("logsDirectory", outputDirectory);
+
+		JavaUtil.createDirectory(outputDirectory);
+
+		LogUtils.info(
+				".......................... TestNG is going to start. Let the game begins ..........................");
+
 	}
 
-	@Override
 	public void onExecutionFinish() {
-		LogUtils.info("TestNG has finished, took around " + (System.currentTimeMillis() - startTime) + "ms");
+
+		LogUtils.info(".......................... TestNG has finished, took around "
+				+ (System.currentTimeMillis() - startTime) + " ..........................");
+
 	}
 
 }

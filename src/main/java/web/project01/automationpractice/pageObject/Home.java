@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.BasePage;
-import utils.listener.MyITestListener2;
+import utils.logging.LogUtils;
 
 public class Home extends BasePage {
 
@@ -18,12 +18,16 @@ public class Home extends BasePage {
 
 	public void openHomePage() {
 
+		LogUtils.logStep("Opening Home Page. URL : " + Home.HOME_URL);
+		
 		openBrowser(Home.HOME_URL);
 		
 
 	}
 
 	public void clickContactUs() {
+		
+		LogUtils.logStep("Click on Contact Us Link");
 
 		click(By.xpath("//a[text()='Contact us']"));
 

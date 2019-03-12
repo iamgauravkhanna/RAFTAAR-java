@@ -4,7 +4,7 @@
 	thread-count="5">
 
 	<listeners>
-		<listener class-name="utils.listener.MyITestListener" />
+		<listener class-name="utils.listener.MyITestListener4" />
 		<listener class-name="utils.listener.MyIExecutionListener" />
 	</listeners>
 
