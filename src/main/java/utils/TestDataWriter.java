@@ -27,7 +27,7 @@ public class TestDataWriter {
 
 		}
 		
-		LogUtils.info("Thread Name : " + Thread.currentThread().getName() + " & " + "Instance ID : " + instance.hashCode());
+		//LogUtils.info("Thread Name : " + Thread.currentThread().getName() + " & " + "Instance ID : " + instance.hashCode());
 
 		return instance;
 

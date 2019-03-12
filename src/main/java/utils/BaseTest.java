@@ -12,9 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import utils.java.JavaUtil;
 import utils.logging.LogUtils;
 
-public class BaseTest {
-
-	public WebDriver webDriverObj ;
+public class BaseTest {	
 
 	public HashMap<String, String> testDataMap = new HashMap<String, String>();
 

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite - Project 03" parallel="tests"
+	thread-count="5">
+
+	<listeners>
+		<listener class-name="utils.listener.MyITestListener4" />
+		<listener class-name="utils.listener.MyIExecutionListener" />
+	</listeners>
+
+	<test name="Project 08 - Test 01" parallel="methods"
+		thread-count="10">
+		<classes>
+			<class name="web.project08.mix.Feature001" />
+		</classes>
+
+	</test>
+</suite>

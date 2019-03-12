@@ -22,7 +22,7 @@ public class Feature001 extends BaseTest {
 
 		LogUtils.info("============ beforeStartingTestMethod() begins ============");
 
-		brokerReusableObj = new Reusables(webDriverObj);
+		brokerReusableObj = new Reusables(webDriverPool.get());
 
 		LogUtils.info("============ beforeStartingTestMethod() ends ============");
 

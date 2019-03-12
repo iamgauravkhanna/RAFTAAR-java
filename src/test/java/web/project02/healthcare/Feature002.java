@@ -20,7 +20,7 @@ public class Feature002 extends BaseTest {
 
 		LogUtils.info("BeforeTest Method of TestClass02");
 
-		brokerReusableObj = new Reusables(webDriverObj);
+		brokerReusableObj = new Reusables(webDriverPool.get());
 
 	}
 
