@@ -1,7 +1,5 @@
 package web.project02.healthcare.pageObject.broker;
 
-import java.util.HashMap;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

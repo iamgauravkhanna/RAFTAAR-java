@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="RAFTAAR-core" />
+        <module name="RAFTAAR-mobile-tests" />
+        <module name="RAFTAAR-web-tests" />
+        <module name="RAFTAAR-api-tests" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RAFTAAR-api-tests" target="1.5" />
+      <module name="RAFTAAR-core" target="1.5" />
+      <module name="RAFTAAR-mobile-tests" target="1.5" />
+      <module name="RAFTAAR-web-tests" target="${jdk.level}" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

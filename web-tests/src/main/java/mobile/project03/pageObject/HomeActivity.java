@@ -1,6 +1,5 @@
 package mobile.project03.pageObject;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import utils.BaseActivity;
