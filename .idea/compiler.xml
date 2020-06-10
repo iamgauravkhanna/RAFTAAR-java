@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RAFTAAR-core" />
-        <module name="RAFTAAR-mobile-tests" />
-        <module name="RAFTAAR-web-tests" />
+        <module name="core" />
+        <module name="web-tests" />
         <module name="RAFTAAR-api-tests" />
+        <module name="mobile-tests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="core" target="1.5" />
+      <module name="mobile-tests" target="1.5" />
       <module name="RAFTAAR-api-tests" target="1.5" />
-      <module name="RAFTAAR-core" target="1.5" />
-      <module name="RAFTAAR-mobile-tests" target="1.5" />
-      <module name="RAFTAAR-web-tests" target="${jdk.level}" />
+      <module name="web-tests" target="${jdk.level}" />
     </bytecodeTargetLevel>
   </component>
 </project>
