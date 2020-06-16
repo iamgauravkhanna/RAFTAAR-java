@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-tests/RAFTAAR-api-tests.iml" filepath="$PROJECT_DIR$/api-tests/RAFTAAR-api-tests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/RAFTAAR-java.iml" filepath="$PROJECT_DIR$/.idea/RAFTAAR-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mobile-tests/mobile-tests.iml" filepath="$PROJECT_DIR$/mobile-tests/mobile-tests.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web-tests/web-tests.iml" filepath="$PROJECT_DIR$/web-tests/web-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RAFTAAR-java.iml" filepath="$PROJECT_DIR$/RAFTAAR-java.iml" />
     </modules>
   </component>
 </project>
