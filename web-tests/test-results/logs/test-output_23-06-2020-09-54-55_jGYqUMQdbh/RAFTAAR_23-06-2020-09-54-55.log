@@ -1,0 +1,70 @@
+2020-06-23 21:54:55 INFO  LogUtils:48 - ************************ Test Suite Project 01 - Test 01 Started ************************
+2020-06-23 21:54:55 INFO  LogUtils:48 - ..................... setUp() begins .....................
+2020-06-23 21:54:55 INFO  LogUtils:48 - Intializing TestDataWriter Object
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : logsDirectory => /Users/gaurav.khanna/repo/RAFTAAR-java/web-tests/test-results/logs/test-output_23-06-2020-09-54-55_jGYqUMQdbh
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : User => Gaurav.Khanna
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : Browser => firefox
+2020-06-23 21:54:55 INFO  LogUtils:48 - Calling Constructor : DriverUtil()
+2020-06-23 21:54:55 INFO  LogUtils:48 - Current Operating System: MAC OS X
+2020-06-23 21:54:55 INFO  LogUtils:48 - Current Architecture: x86_64
+2020-06-23 21:54:55 INFO  LogUtils:48 - Environment Level Properties Loaded Successfully
+2020-06-23 21:54:55 INFO  LogUtils:48 - Common Properties Loaded Successfully
+2020-06-23 21:54:55 INFO  LogUtils:48 - Reading Contents of Property File
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : BROKER_USERNAME => user.235988594@broker.com
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : BROKER_URL => https://qa07form1.product-phix-all-qa-05.internal.hcphix.com/broker
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : Platform => Mac
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : RemoteURL => http://localhost:4444/wd/hub
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : BROKER_PASSWORD => Testing@123
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : IsRemote => No
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : EnvironmentName => Env1
+2020-06-23 21:54:55 INFO  LogUtils:48 - putKey : Browser => Firefox
+2020-06-23 21:54:55 INFO  LogUtils:48 - Entering Method : intializeDriver()
+2020-06-23 21:54:55 INFO  LogUtils:48 - getKey : Browser => Firefox
+2020-06-23 21:54:55 INFO  LogUtils:48 - getKey : Browser => Firefox
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : Platform => Mac
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : Platform => Mac
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : Platform => Mac
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : IsRemote => No
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : Browser => Firefox
+2020-06-23 21:54:56 INFO  LogUtils:48 - getKey : Browser => Firefox
+2020-06-23 21:54:58 INFO  LogUtils:48 - getKey : Browser => Firefox
+2020-06-23 21:54:58 INFO  LogUtils:48 - ================== Returning Data Dictionary ==================
+2020-06-23 21:54:58 INFO  LogUtils:48 - ..................... setUp() ends .....................
+2020-06-23 21:54:58 INFO  LogUtils:48 - *** Running Test Method TC_001...
+2020-06-23 21:54:58 INFO  LogUtils:16 - ****************************************************************************************
+2020-06-23 21:54:58 INFO  LogUtils:18 - ****************************************************************************************
+2020-06-23 21:54:58 INFO  LogUtils:20 - $$$$$$$$$$$$$$$$$$$$$                 TC_001       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-23 21:54:58 INFO  LogUtils:22 - ****************************************************************************************
+2020-06-23 21:54:58 INFO  LogUtils:24 - ****************************************************************************************
+2020-06-23 21:54:58 INFO  LogUtils:48 - putKey : testcaseid => TC_001
+2020-06-23 21:54:58 INFO  LogUtils:48 - =========== BasePage Constructor ===========
+2020-06-23 21:54:58 INFO  LogUtils:80 - Opening Home Page. URL : http://automationpractice.com
+2020-06-23 21:54:58 INFO  LogUtils:48 - Link to Open ======> http://automationpractice.com
+2020-06-23 21:55:07 INFO  LogUtils:80 - Open Browser
+2020-06-23 21:55:07 INFO  LogUtils:80 - Click on Contact Us Link
+2020-06-23 21:55:07 INFO  LogUtils:48 - Element Found
+2020-06-23 21:55:09 INFO  LogUtils:80 - Using click()
+2020-06-23 21:55:09 INFO  LogUtils:48 - *** Executed TC_001 test successfully...
+2020-06-23 21:55:09 INFO  LogUtils:32 - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2020-06-23 21:55:09 INFO  LogUtils:34 - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2020-06-23 21:55:09 INFO  LogUtils:36 - $$$$$$$$$$$$$$$$$$$$$                 TC_001       $$$$$$$$$$$$$$$$$$$$$$$$$
+2020-06-23 21:55:09 INFO  LogUtils:38 - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2020-06-23 21:55:09 INFO  LogUtils:40 - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2020-06-23 21:55:09 INFO  LogUtils:48 - Putting All Keys
+2020-06-23 21:55:09 INFO  LogUtils:48 - ..................... Closing Browser .....................
+2020-06-23 21:55:10 INFO  LogUtils:48 - ================== Returning Data Dictionary ==================
+2020-06-23 21:55:10 INFO  LogUtils:48 - ..................... All Methods in Test Are Executed .....................
+2020-06-23 21:55:10 INFO  LogUtils:48 - ************************ Test Suite Project 01 - Test 01 Ending ************************
+2020-06-23 21:55:40 INFO  LogUtils:48 - Calling Method : printHashMapValues() 
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #1 : BROKER_URL => https://qa07form1.product-phix-all-qa-05.internal.hcphix.com/broker
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #2 : testcaseid => TC_001
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #3 : IsRemote => No
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #4 : User => Gaurav.Khanna
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #5 : Platform => Mac
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #6 : BROKER_PASSWORD => Testing@123
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #7 : EnvironmentName => Env1
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #8 : BROKER_USERNAME => user.235988594@broker.com
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #9 : RemoteURL => http://localhost:4444/wd/hub
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #10 : logsDirectory => /Users/gaurav.khanna/repo/RAFTAAR-java/web-tests/test-results/logs/test-output_23-06-2020-09-54-55_jGYqUMQdbh
+2020-06-23 21:55:40 INFO  LogUtils:48 - Entry #11 : Browser => Firefox
+2020-06-23 21:55:40 INFO  LogUtils:48 - .......................... TestNG has finished, took around 45392 ..........................

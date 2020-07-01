@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ff15399-0c30-42bd-8b4d-70d798fb9632" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/RAFTAAR-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project05/pageObject/the-internet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project06/pageObject/theautomatedtester.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RAFTAAR-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RAFTAAR-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project01/automationpractice/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/automationpractice/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project01/automationpractice/pageObject/automationPractice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project01/automationpractice/pageObject/automationPractice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/AddEmployer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/AddEmployer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/BrokerHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/BrokerHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/ManageEmployer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/ManageEmployer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/Reusables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/Reusables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/TopLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/TopLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/broker/exchange.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/employee/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/employee/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/employee/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/employee/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/employer/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/employer/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/employer/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/employer/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/uiMap/Auth0LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/uiMap/Auth0LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/uiMap/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/uiMap/Broker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project02/healthcare/pageObject/uiMap/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/uiMap/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project03/pageObject/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project03/pageObject/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project03/pageObject/DashBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project03/pageObject/DashBoardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project03/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project03/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project03/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project03/pageObject/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project03/pageObject/phptravels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project04/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project04/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project04/pageObject/newtours.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project02/healthcare/pageObject/broker/exchange.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project05/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project05/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project05/pageObject/the-internet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project03/pageObject/phptravels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project06/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project06/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project06/pageObject/theautomatedtester.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project04/pageObject/newtours.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project07/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project07/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project07/pageObject/opensource.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project07/pageObject/opensource.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/java/web/project08/mix/pageObject/Resuables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project08/mix/pageObject/Resuables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/resources/common.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/common.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/resources/environment01.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/environment01.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/resources/environment02.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/environment02.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/main/resources/project02.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project02.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project01/automationpractice/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project01/automationpractice/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project02/healthcare/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project02/healthcare/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project02/healthcare/Feature002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project02/healthcare/Feature002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project02/healthcare/Feature003.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project02/healthcare/Feature003.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project03/phptravels/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project03/phptravels/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/java/web/project08/mix/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project08/mix/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/drivers/chrome-driver/2.46/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chrome-driver/2.46/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/drivers/gecko-driver/geckodriver-v0.24.0-win64/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/drivers/gecko-driver/geckodriver-v0.24.0-win64/geckodriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/master_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/master_suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project09.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project09.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/suites/web/project99.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/web/project99.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/test-data/test-data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data/test-data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../old-web-tests/src/test/resources/test-data/test-data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data/test-data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1dP5u9qtYGySWJ8btQa2BAagdek" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ff15399-0c30-42bd-8b4d-70d798fb9632" name="Default Changelist" comment="" />
+      <created>1592314107619</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592314107619</updated>
+    </task>
+    <servers />
+  </component>
+</project>
