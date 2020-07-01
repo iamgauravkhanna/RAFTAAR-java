@@ -8,12 +8,12 @@
     <artifactId>RAFTAAR-java</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>core</module>
         <module>web-tests</module>
         <module>api-tests</module>
         <module>mobile-tests</module>
     </modules>
-
 
 </project>

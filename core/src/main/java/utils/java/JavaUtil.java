@@ -95,7 +95,7 @@ public class JavaUtil {
 
 	public static void createDirectory(String directoryName) {
 
-		LogUtils.info("Directory Created : " + directoryName);
+		LogUtils.info("Directory PATH  : " + directoryName);
 
 		File dir = new File(directoryName);
 

@@ -83,7 +83,7 @@ public class LogUtils {
 
 		try {
 
-			ExtentTestManager4.getTest().info(message);
+//			ExtentTestManager4.getTest().info(message);
 
 		} catch (Exception e) {
 

@@ -66,6 +66,12 @@ public class BasePage {
 	//
 	public int defaultTimeOut = 60;
 
+	private static final int TIMEOUT = 60;
+
+	private static final int POLLING = 100;
+
+	private WebDriverWait wait;
+
 	/**
 	 * Constructor of this class
 	 */
@@ -81,12 +87,26 @@ public class BasePage {
 
 			// basePagehashMapObj = new HashMap<String, String>();
 
+			// wait = new WebDriverWait(webDriverObj, TIMEOUT, POLLING);
+
 		} catch (Exception e) {
 
 			e.printStackTrace();
 
 		}
 
+	}
+
+	protected void waitForElementToAppear(By locator) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	protected void waitForElementToDisappear(By locator) {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+	}
+
+	protected void waitForTextToDisappear(By locator, String text) {
+		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
 	}
 
 	/**

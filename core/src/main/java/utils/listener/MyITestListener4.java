@@ -23,11 +23,11 @@ public class MyITestListener4 implements ITestListener {
 
 		LogUtils.info("************************ Test Suite " + context.getName() + " Ending ************************");
 
-		ExtentTestManager4.endTest();
+		// ExtentTestManager4.endTest();
 
-		ExtentManager4.getInstance().flush();
+		// ExtentManager4.getInstance().flush();
 
-		TestDataWriter.getInstance().putKey("Report Link", ExtentManager4.getReportLink());
+		// TestDataWriter.getInstance().putKey("Report Link", ExtentManager4.getReportLink());
 	}
 
 	public void onTestStart(ITestResult result) {
@@ -36,7 +36,7 @@ public class MyITestListener4 implements ITestListener {
 
 		LogUtils.startTestCase(result.getMethod().getMethodName());
 
-		ExtentTestManager4.startTest(result.getMethod().getMethodName());
+		// ExtentTestManager4.startTest(result.getMethod().getMethodName());
 		
 		TestDataWriter.getInstance().putKey("testcaseid", result.getMethod().getMethodName());
 	}
@@ -47,21 +47,21 @@ public class MyITestListener4 implements ITestListener {
 
 		LogUtils.endTestCase(result.getMethod().getMethodName());
 
-		ExtentTestManager4.getTest().log(Status.PASS, "Test passed");
+		// ExtentTestManager4.getTest().log(Status.PASS, "Test passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
 
 		LogUtils.info("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 
-		ExtentTestManager4.getTest().log(Status.FAIL, "Test Failed");
+//		ExtentTestManager4.getTest().log(Status.FAIL, "Test Failed");
 	}
 
 	public void onTestSkipped(ITestResult result) {
 
 		LogUtils.info("*** Test " + result.getMethod().getMethodName() + " skipped...");
 
-		ExtentTestManager4.getTest().log(Status.SKIP, "Test Skipped");
+		// ExtentTestManager4.getTest().log(Status.SKIP, "Test Skipped");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

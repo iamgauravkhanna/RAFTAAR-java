@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
@@ -105,15 +106,22 @@ public class BrowserFactory {
 
 		} else if (TestDataWriter.getInstance().getKey("Browser").equalsIgnoreCase("Firefox")) {
 
-			String firefoxDriverPath = "src/test/resources/drivers/gecko-driver/geckodriver-v0.24.0-win64/geckodriver.exe";
+//			String firefoxDriverPath = "src/test/resources/drivers/gecko-driver/geckodriver-v0.24.0-win64/geckodriver.exe";
+//
+//			LogUtils.info("Path of Firefox Driver : " + firefoxDriverPath);
+//
+//			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
 
-			LogUtils.info("Path of Firefox Driver : " + firefoxDriverPath);
+			try {
 
-			System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
+				WebDriverManager.firefoxdriver().setup();
 
-			desiredCapabilitiesObj = DesiredCapabilities.firefox();
-
-			desiredCapabilitiesObj.setCapability("marionette", true);
+				desiredCapabilitiesObj = DesiredCapabilities.firefox();
+			}
+			catch (Exception e){
+				System.out.println(e);
+			}
+			// desiredCapabilitiesObj.setCapability("marionette", true);
 
 		} else if (TestDataWriter.getInstance().getKey("Browser").equalsIgnoreCase("IE"))
 
@@ -140,6 +148,10 @@ public class BrowserFactory {
 		} else if (TestDataWriter.getInstance().getKey("Platform").equalsIgnoreCase("Linux")) {
 
 			desiredCapabilitiesObj.setPlatform(Platform.LINUX);
+
+		} else if (TestDataWriter.getInstance().getKey("Platform").equalsIgnoreCase("Mac")) {
+
+			desiredCapabilitiesObj.setPlatform(Platform.MAC);
 
 		}
 
@@ -174,6 +186,8 @@ public class BrowserFactory {
 			}
 
 		}
+
+		System.out.println("Returing Browser from Browser Factory");
 
 		return webDriverObj;
 
@@ -251,13 +265,19 @@ public class BrowserFactory {
 
 		System.out.println("Environment File Path => " + System.getProperty("EnvironmentFilePath"));
 
-		//
-		FileInputStream resourceStream = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\"
-				+ System.getProperty("EnvironmentFilePath"));
+		String absolutePath = System.getProperty("user.dir") + "/src/main/resources/"
+				+ System.getProperty("EnvironmentFilePath") ;
+
+		System.out.println("Environment Absolute Path => " + absolutePath );
 
 		//
-		FileInputStream resourceStream2 = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\resources\\common.properties");
+		FileInputStream resourceStream = new FileInputStream(absolutePath);
+
+
+		String absolutePath2 = System.getProperty("user.dir") + "/src/main/resources/common.properties" ;
+
+		//
+		FileInputStream resourceStream2 = new FileInputStream(absolutePath2);
 
 		try {
 

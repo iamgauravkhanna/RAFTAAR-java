@@ -24,7 +24,7 @@ public class BaseTest {
 
 	public BaseTest() {
 
-/*		System.setProperty("current.date.time", JavaUtil.getTimeStamp());
+	System.setProperty("current.date.time", JavaUtil.getTimeStamp());
 
 		String fileSeperator = System.getProperty("file.separator");
 
@@ -33,7 +33,9 @@ public class BaseTest {
 
 		System.setProperty("logsDirectory", outputDirectory);
 
-		JavaUtil.createDirectory(outputDirectory);*/
+		System.setProperty("EnvironmentFilePath", "environment01.properties") ;
+
+		JavaUtil.createDirectory(outputDirectory);
 
 		PropertyConfigurator.configure("log4j.properties");
 
@@ -47,6 +49,8 @@ public class BaseTest {
 		TestDataWriter.getInstance().putKey("logsDirectory", outputDirectory);
 
 		TestDataWriter.getInstance().putKey("User", "Gaurav.Khanna");
+
+		TestDataWriter.getInstance().putKey("Browser", "firefox");
 
 		browserFactoryObj = new BrowserFactory();
 
@@ -63,11 +67,13 @@ public class BaseTest {
 
 		TestDataWriter.getInstance().putAllKeys(testDataMap);
 
-/*		LogUtils.info("..................... Closing Browser .....................");
+LogUtils.info("..................... Closing Browser .....................");
 
-		webDriverPool.get().manage().deleteAllCookies();
+		/*				webDriverPool.get().manage().deleteAllCookies();
 
-		webDriverPool.get().quit();*/
+		*/
+
+		webDriverPool.get().quit();
 
 		testDataMap.putAll(TestDataWriter.getInstance().getDataDictionary());
 
