@@ -16,6 +16,12 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import utils.logging.LogUtils;
 
+/**
+ * This is base class for android tests containing all the methods possible on UI.
+ *
+ * @author Gaurav.Khanna
+ *
+ */
 public class BaseActivity {
 
 	// AndroidDriver<Mo> androidDriverObj;
@@ -35,7 +41,7 @@ public class BaseActivity {
 
 		try {
 
-			LogUtils.info("Calling MobilePage Constructor");
+			LogUtils.info("Calling BaseActivity Android Constructor");
 
 		} catch (Exception e) {
 

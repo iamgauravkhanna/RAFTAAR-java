@@ -6,14 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotVisibleException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -63,7 +56,6 @@ public class BasePage {
 	// File, Sheet, S.No., Key, Value
 	public HashMap<String, HashMap<String, HashMap<String, HashMap<String, String>>>> testDataMap;
 
-	//
 	public int defaultTimeOut = 60;
 
 	private static final int TIMEOUT = 60;
@@ -72,9 +64,6 @@ public class BasePage {
 
 	private WebDriverWait wait;
 
-	/**
-	 * Constructor of this class
-	 */
 	public BasePage() {
 
 		try {
@@ -751,6 +740,18 @@ public class BasePage {
 	public String getAttribute(By locator, String attribute) {
 
 		return webDriverObj.findElement(locator).getAttribute(attribute).toString();
+
+	}
+
+	public Point getLocation(By locator){
+
+		return webDriverObj.findElement(locator).getLocation();
+
+	}
+
+	public Dimension getSize(By locator){
+
+		return webDriverObj.findElement(locator).getSize();
 
 	}
 

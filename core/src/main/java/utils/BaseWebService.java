@@ -2,7 +2,7 @@ package utils;
 
 import io.restassured.RestAssured;
 
-public class BaseWebServiceClass {
+public class BaseWebService {
 
 	public void verifyStatus(String BaseURI, int statusCode) {
 
