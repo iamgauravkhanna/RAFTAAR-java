@@ -22,35 +22,27 @@ import utils.logging.LogUtils;
 
 /**
  * This is base class for web tests containing all the methods possible on UI.
- * 
+ *
  * @author Gaurav.Khanna
  *
  */
 
 public class BasePage {
 
-	// Declaring variable 'webDriverObj' of WebDriver Type
 	public WebDriver webDriverObj;
 
-	//
-	public static HashMap<String, String> basePageHashMapObj = new HashMap<String, String>();;
+	public static HashMap<String, String> basePageHashMapObj = new HashMap<String, String>();
 
-	//
 	public static HashMap<String, String> propertiesMap;
 
-	//
 	String highLightPropertyName = "outline";
 
-	//
 	String highlightColor = "#00ff00 solid 3px";
 
-	//
 	String originalColor = "none";
 
-	//
 	private int defaultPause = 10;
 
-	//
 	public static HashMap<String, String> testCaseMap;
 
 	// File, Sheet, S.No., Key, Value
@@ -64,6 +56,11 @@ public class BasePage {
 
 	private WebDriverWait wait;
 
+	/**
+	 *
+	 * Constructor
+	 *
+	 */
 	public BasePage() {
 
 		try {
@@ -86,21 +83,9 @@ public class BasePage {
 
 	}
 
-	protected void waitForElementToAppear(By locator) {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	}
-
-	protected void waitForElementToDisappear(By locator) {
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-	}
-
-	protected void waitForTextToDisappear(By locator, String text) {
-		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
-	}
-
 	/**
 	 * Method to click element using click() command
-	 * 
+	 *
 	 * @param by
 	 */
 	public void click(By by) {
@@ -137,21 +122,9 @@ public class BasePage {
 
 	}
 
-	public void isClickable(By by) {
-
-		WebDriverWait wait = new WebDriverWait(webDriverObj, 30);
-
-		boolean what = wait.until(ExpectedConditions.elementToBeClickable(findElement(by))) != null;
-
-		if (what)
-			LogUtils.info("Element is clickable");
-		else
-			LogUtils.info("Element not clickable");
-	}
-
 	/**
 	 * Method to click element using JavaScript
-	 * 
+	 *
 	 * @param element
 	 */
 	public void clickUsingJavaScript(By by) {
@@ -173,9 +146,33 @@ public class BasePage {
 
 	}
 
+	public void waitForElementToAppear(By locator) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	public void waitForElementToDisappear(By locator) {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+	}
+
+	public void waitForTextToDisappear(By locator, String text) {
+		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+	}
+
+	public void isElemenetClickable(By by) {
+
+		WebDriverWait wait = new WebDriverWait(webDriverObj, 30);
+
+		boolean what = wait.until(ExpectedConditions.elementToBeClickable(findElement(by))) != null;
+
+		if (what)
+			LogUtils.info("Element is clickable");
+		else
+			LogUtils.info("Element not clickable");
+	}
+
 	/**
 	 * Method to get tag name of web element
-	 * 
+	 *
 	 * @param locator
 	 */
 	public String getTagName(By locator) {
@@ -192,7 +189,7 @@ public class BasePage {
 
 	/**
 	 * Method to open link in browser
-	 * 
+	 *
 	 * @param link
 	 */
 	public void openBrowser(String link) {
@@ -295,7 +292,7 @@ public class BasePage {
 
 	/**
 	 * Method to find web element
-	 * 
+	 *
 	 * @param locator
 	 * @return
 	 */
@@ -353,11 +350,11 @@ public class BasePage {
 
 	/**
 	 * Method to find web element
-	 * 
+	 *
 	 * @param locator
-	 * 
+	 *
 	 * @return List of Web Elements
-	 * 
+	 *
 	 */
 	public List<WebElement> findElements(By locator) {
 
@@ -372,15 +369,30 @@ public class BasePage {
 
 	/**
 	 * Method to enter text in web element
-	 * 
+	 *
 	 * @param locator
 	 * @param value
 	 */
 	public void setText(By locator, String value) {
 
-		//
 		findElement(locator).sendKeys(value);
 
+	}
+
+	public void uploadFile(By locator, String filePath){
+
+		setText(locator, filePath);
+	}
+
+	public void downloadFile(By locator, int waitForMilliSeconds){
+
+		click(locator);
+
+		try {
+			Thread.sleep(waitForMilliSeconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void type(String str, By locator) {
@@ -399,7 +411,7 @@ public class BasePage {
 
 	/**
 	 * Sends a special keystroke to element
-	 * 
+	 *
 	 * @return
 	 */
 	public Keys pressKey(By locator, String key) throws Exception {
@@ -420,11 +432,11 @@ public class BasePage {
 
 	/**
 	 * Loads all the properties from property file and store them in Map
-	 * 
+	 *
 	 * @return
-	 * 
+	 *
 	 * @return map that contains the properties as key/value pairs
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public static HashMap<String, String> getProperties() throws Exception {
@@ -481,7 +493,7 @@ public class BasePage {
 
 	public void waitFor(By locator, int time) {
 
-		WebDriverWait wait = new WebDriverWait(webDriverObj, time);		
+		WebDriverWait wait = new WebDriverWait(webDriverObj, time);
 
 		if (wait.until(ExpectedConditions.visibilityOfElementLocated(locator)) != null) {
 
@@ -498,7 +510,7 @@ public class BasePage {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param element
 	 * @throws InterruptedException
 	 */
@@ -524,7 +536,7 @@ public class BasePage {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param loc
 	 * @param text
 	 */
@@ -554,7 +566,7 @@ public class BasePage {
 
 	/**
 	 * Prints all options available in drop down
-	 * 
+	 *
 	 * @param locator
 	 */
 	public void getAllOptions(By locator) {
@@ -577,7 +589,7 @@ public class BasePage {
 
 	/**
 	 * Set variable in testCase Map
-	 * 
+	 *
 	 * @param key
 	 * @param value
 	 */
@@ -589,7 +601,7 @@ public class BasePage {
 
 	/**
 	 * Run select query on DB
-	 * 
+	 *
 	 * @return void
 	 */
 	public void runSelectQuery(String query) {
@@ -603,7 +615,7 @@ public class BasePage {
 	}
 
 	/**
-	 *  
+	 *
 	 */
 	public void getPageUrl(String url) {
 
@@ -611,14 +623,14 @@ public class BasePage {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public void runJavaScript() {
 
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public void pause() {
 
@@ -656,9 +668,9 @@ public class BasePage {
 		 * if(driver.findElements(By.xpath("value")).size() != 0){
 		 * System.out.println("Element is Present"); }else{
 		 * System.out.println("Element is Absent"); }
-		 * 
+		 *
 		 * Or
-		 * 
+		 *
 		 * if(driver.findElement(By.xpath("value"))!= null){
 		 * System.out.println("Element is Present"); }else{
 		 * System.out.println("Element is Absent"); }
@@ -684,7 +696,7 @@ public class BasePage {
 	public void quitBrowser() {
 
 		LogUtils.logStep("Quiting Browser");
-		
+
 		webDriverObj.quit();
 
 	}
@@ -752,6 +764,24 @@ public class BasePage {
 	public Dimension getSize(By locator){
 
 		return webDriverObj.findElement(locator).getSize();
+
+	}
+
+	public boolean isSelected(By locator){
+
+		return webDriverObj.findElement(locator).isSelected();
+
+	}
+
+	public boolean isDisplayed(By locator){
+
+		return webDriverObj.findElement(locator).isDisplayed();
+
+	}
+
+	public boolean isEnabled(By locator){
+
+		return webDriverObj.findElement(locator).isEnabled();
 
 	}
 
