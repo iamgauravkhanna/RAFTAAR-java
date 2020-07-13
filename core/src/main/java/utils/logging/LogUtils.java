@@ -2,8 +2,6 @@ package utils.logging;
 
 import org.apache.log4j.Logger;
 
-import utils.listener.ExtentTestManager4;
-
 public class LogUtils {
 
 	// Initialize Log4j logs

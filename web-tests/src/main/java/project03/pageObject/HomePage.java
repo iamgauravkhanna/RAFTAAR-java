@@ -1,4 +1,4 @@
-package web.project03.pageObject;
+package project03.pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +22,7 @@ public class HomePage extends BasePage {
 
 	public void verifyHomeFrontEndPresent() {
 
-		assertPresent(homeFrontEndText);
+		assertElementIsPresent(homeFrontEndText);
 
 	}
 

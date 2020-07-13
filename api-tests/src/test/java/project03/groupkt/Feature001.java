@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import api.project03.groupkt.pageObject.MainRequest;
 
+import project01.typicode.pageObject.MainRequest;
 import utils.BaseTest;
 
 public class Feature001 extends BaseTest {

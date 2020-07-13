@@ -12,19 +12,19 @@ import org.testng.annotations.BeforeMethod;
 import utils.java.JavaUtil;
 import utils.logging.LogUtils;
 
-public class BaseTest {	
+public class BaseTest {
 
-	public HashMap<String, String> testDataMap = new HashMap<String, String>();
+	public HashMap<String, String> testDataMap = new HashMap<>();
 
 	private BrowserFactory browserFactoryObj;
 
 	private String outputDirectory;
-	
-	public ThreadLocal<WebDriver> webDriverPool = new ThreadLocal<WebDriver>();
+
+	public ThreadLocal<WebDriver> webDriverPool = new ThreadLocal<>();
 
 	public BaseTest() {
 
-	System.setProperty("current.date.time", JavaUtil.getTimeStamp());
+		/*System.setProperty("current.date.time", JavaUtil.getTimeStamp());
 
 		String fileSeperator = System.getProperty("file.separator");
 
@@ -35,7 +35,7 @@ public class BaseTest {
 
 		System.setProperty("EnvironmentFilePath", "environment01.properties") ;
 
-		JavaUtil.createDirectory(outputDirectory);
+		JavaUtil.createDirectory(outputDirectory);*/
 
 		PropertyConfigurator.configure("log4j.properties");
 
@@ -46,7 +46,7 @@ public class BaseTest {
 
 		LogUtils.info("..................... setUp() begins .....................");
 
-		TestDataWriter.getInstance().putKey("logsDirectory", outputDirectory);
+		TestDataWriter.getInstance().putKey("logsDirectory", System.getProperty("logsDirectory"));
 
 		TestDataWriter.getInstance().putKey("User", "Gaurav.Khanna");
 
@@ -67,11 +67,11 @@ public class BaseTest {
 
 		TestDataWriter.getInstance().putAllKeys(testDataMap);
 
-LogUtils.info("..................... Closing Browser .....................");
+		LogUtils.info("..................... Closing Browser .....................");
 
 		/*				webDriverPool.get().manage().deleteAllCookies();
 
-		*/
+		 */
 
 		webDriverPool.get().quit();
 
@@ -85,10 +85,10 @@ LogUtils.info("..................... Closing Browser .....................");
 		LogUtils.info("..................... All Methods in Test Are Executed .....................");
 
 	}
-	
+
 	@AfterSuite
 	public void stepsToBeDoneAfterSuite() {
-		
+
 		JavaUtil.printHashMapValues(testDataMap);
 	}
 

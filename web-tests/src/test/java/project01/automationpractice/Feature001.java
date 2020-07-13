@@ -3,7 +3,7 @@ package project01.automationpractice;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
-import project01.automationpractice.pageObject.Home;
+import project01.pageObject.Home;
 
 /**
  * 
@@ -26,25 +26,5 @@ public class Feature001 extends BaseTest {
 		 // TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
 
 	}
-
-//	@Test
-//	public void TC_002() {
-//
-//		homePageObj.set(new Home(webDriverPool.get()));
-//		homePageObj.get().openHomePage();
-//		homePageObj.get().clickContactUs();
-//		TestDataWriter.getInstance().putKey("TC_ID", "002");
-//
-//	}
-
-//	@Test
-//	public void TC_003() {
-//
-//		homePageObj.set(new Home(webDriverPool.get()));
-//		homePageObj.get().openHomePage();
-//		homePageObj.get().clickContactUs();
-//		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "003");
-//
-//	}
 
 }

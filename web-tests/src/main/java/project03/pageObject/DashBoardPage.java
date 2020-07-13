@@ -1,4 +1,4 @@
-package web.project03.pageObject;
+package project03.pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public class DashBoardPage extends BasePage {
 
 	public void validateHomeTiles() {
 
-		assertPresent(quickBookingButton);
+		assertElementIsPresent(quickBookingButton);
 
 		click(quickBookingButton);
 

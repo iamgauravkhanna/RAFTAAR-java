@@ -1,8 +1,8 @@
-package web.project02.healthcare;
+package project02.healthcare;
 
+import project02.pageObject.broker.Reusables;
 import utils.*;
 import utils.logging.LogUtils;
-import web.project02.healthcare.pageObject.broker.*;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

@@ -13,11 +13,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-tests" target="1.5" />
-      <module name="core" target="1.5" />
-      <module name="mobile-tests" target="1.5" />
-      <module name="RAFTAAR-java" target="1.5" />
-      <module name="web-tests" target="1.5" />
+      <module name="api-tests" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="mobile-tests" target="1.8" />
+      <module name="RAFTAAR-java" target="1.8" />
+      <module name="web-tests" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

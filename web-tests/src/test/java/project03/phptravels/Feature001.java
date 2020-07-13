@@ -1,13 +1,12 @@
-package web.project03.phptravels;
+package project03.phptravels;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
-import utils.TestDataWriter;
-import web.project03.pageObject.AdminPage;
-import web.project03.pageObject.DashBoardPage;
-import web.project03.pageObject.HomePage;
+import project03.pageObject.AdminPage;
+import project03.pageObject.DashBoardPage;
+import project03.pageObject.HomePage;
 
 public class Feature001 extends BaseTest {
 
@@ -27,7 +26,7 @@ public class Feature001 extends BaseTest {
 
 		homePageObj.openBrowser();
 		
-		homePageObj.closePopUpMenus();
+		//homePageObj.closePopUpMenus();
 
 		homePageObj.verifyHomeFrontEndPresent();
 
@@ -39,7 +38,7 @@ public class Feature001 extends BaseTest {
 
 		dashBoardObj.validateHomeTiles();
 		
-		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
+		// TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
 
 	}
 }

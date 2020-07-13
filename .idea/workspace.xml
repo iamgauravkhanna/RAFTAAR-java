@@ -2,9 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e14d25-e498-4d71-ae0c-03c93d81cd2c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_model_2_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tika_tika_core_1_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jooq_joor_java_8_0_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_uncommons_reportng_1_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__velocity_velocity_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__velocity_velocity_dep_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/exchange.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-tests/src/test/resources/allure.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-tests/test-results/test-output_13-07-2020-08-53-53_DOMtdOLlPq/RAFTAAR_13-07-2020-08-53-53.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RAFTAAR-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RAFTAAR-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_6_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_1_android.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-tests/api-tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api-tests/api-tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-tests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-tests/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-tests/src/test/java/project03/groupkt/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-tests/src/test/java/project03/groupkt/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/BaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/BaseAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tests/Challenges_&amp;_Useful_Links" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/Challenges_&amp;_Useful_Links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/BaseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/BaseViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/BaseWebService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/DriverFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/listener/ExtentManager4.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/listener/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/listener/ExtentTestManager4.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/listener/ExtentTestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/listener/MyIExecutionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/listener/IExecutionListenerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/listener/MyITestListener4.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/listener/ITestListenerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/logging/LogUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/logging/LogUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile-tests/mobile-tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile-tests/mobile-tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/runRaftaar.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project01/automationpractice/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project01/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project01/automationpractice/pageObject/automationPractice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project01/pageObject/automationPractice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/AddEmployer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/AddEmployer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/BrokerHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/BrokerHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/ManageEmployer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/ManageEmployer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/Reusables.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/Reusables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/TopLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/broker/TopLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/broker/exchange.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/employee/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/employee/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/employee/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/employer/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/employer/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/employer/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/employer/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/employee/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/uiMap/Auth0LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/uiMap/Auth0LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/uiMap/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/uiMap/Broker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project02/healthcare/pageObject/uiMap/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project02/pageObject/uiMap/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/DashBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/DashBoardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/main/java/project03/pageObject/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/project01/automationpractice/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/java/project01/automationpractice/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/project02/healthcare/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/java/project02/healthcare/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/project02/healthcare/Feature002.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/java/project02/healthcare/Feature002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/java/project03/phptravels/Feature001.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/java/project03/phptravels/Feature001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/drivers/chrome-driver/2.46/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/drivers/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/drivers/gecko-driver/geckodriver-v0.24.0-win64/geckodriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/src/test/resources/suites/web/project08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-31-25_AtvXAWCzdq/RAFTAAR_23-06-2020-09-31-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-34-31_rYBSNqZqGb/RAFTAAR_23-06-2020-09-34-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-34-59_hsZLXuWwtj/RAFTAAR_23-06-2020-09-34-59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-38-51_VhyNqqrRyl/RAFTAAR_23-06-2020-09-38-51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-39-11_bwqvLtdSPV/RAFTAAR_23-06-2020-09-39-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-42-28_CDQgLjdTIt/RAFTAAR_23-06-2020-09-42-28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-46-58_KmQJjAsZXw/RAFTAAR_23-06-2020-09-46-58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-47-34_jURdssTVZW/RAFTAAR_23-06-2020-09-47-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-48-29_pAVdLLVfXW/RAFTAAR_23-06-2020-09-48-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-50-06_ZQqsSWPOBi/RAFTAAR_23-06-2020-09-50-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-52-29_RqJOUrMEtk/RAFTAAR_23-06-2020-09-52-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-53-55_LYuYkwROPT/RAFTAAR_23-06-2020-09-53-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-54-55_jGYqUMQdbh/RAFTAAR_23-06-2020-09-54-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-57-04_tqkSDbAOZy/RAFTAAR_23-06-2020-09-57-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-58-20_ikrsMWhZpA/RAFTAAR_23-06-2020-09-58-20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/test-results/logs/test-output_23-06-2020-09-59-52_djcqKSpQsa/RAFTAAR_23-06-2020-09-59-52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-tests/web-tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-tests/web-tests.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,25 +129,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/web-tests/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web-tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="android" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core" />
+      <recent name="$PROJECT_DIR$/web-tests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/mobile-tests/src/test/java" />
       <recent name="$PROJECT_DIR$/api-tests/src/test/java" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/mobile-tests/src/main/java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="android" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web-tests" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.Feature001.TC_001">
@@ -128,14 +222,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="23" width="1024" height="832" key="#Project_Structure" timestamp="1592923798561">
+    <state x="208" y="23" width="1024" height="832" key="#Project_Structure" timestamp="1594044724458">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="208" y="23" width="1024" height="832" key="#Project_Structure/0.23.1440.832@0.23.1440.832" timestamp="1592923798561" />
-    <state x="408" y="179" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592827260499">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="208" y="23" width="1024" height="832" key="#Project_Structure/0.23.1440.832@0.23.1440.832" timestamp="1594044724458" />
+    <state x="408" y="179" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594645596479">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="408" y="179" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.832@0.23.1440.832" timestamp="1592827260499" />
+    <state x="408" y="179" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.834@0.23.1440.834" timestamp="1594645596479" />
     <state x="521" y="368" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593622381755">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
@@ -160,22 +255,25 @@
       <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1593622622759" />
-    <state x="258" y="98" key="Maven.ArtifactSearchDialog" timestamp="1592838935907">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="258" y="98" key="Maven.ArtifactSearchDialog" timestamp="1594651367126">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="258" y="98" key="Maven.ArtifactSearchDialog/0.23.1440.832@0.23.1440.832" timestamp="1592838935907" />
-    <state x="221" y="75" key="SettingsEditor" timestamp="1593703562560">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="258" y="98" key="Maven.ArtifactSearchDialog/0.23.1440.834@0.23.1440.834" timestamp="1594651367126" />
+    <state x="221" y="75" key="SettingsEditor" timestamp="1594645705091">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1593703562560" />
+    <state x="221" y="75" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1594645705091" />
     <state x="507" y="221" key="chooseDestDirectoryDialog" timestamp="1592802670222">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="507" y="221" key="chooseDestDirectoryDialog/0.23.1440.832@0.23.1440.832" timestamp="1592802670222" />
-    <state x="421" y="191" width="598" height="490" key="find.popup" timestamp="1592925310968">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="421" y="191" width="598" height="492" key="find.popup" timestamp="1594134599991">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="421" y="191" width="598" height="490" key="find.popup/0.23.1440.832@0.23.1440.832" timestamp="1592925310968" />
+    <state x="421" y="191" width="598" height="492" key="find.popup/0.23.1440.834@0.23.1440.834" timestamp="1594134599991" />
     <state x="88" y="99" key="new project wizard" timestamp="1592307712325">
       <screen x="0" y="23" width="1440" height="832" />
     </state>

@@ -2,19 +2,15 @@ package utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
 import utils.java.JavaUtil;
@@ -125,7 +121,7 @@ public class BasePage {
 	/**
 	 * Method to click element using JavaScript
 	 *
-	 * @param element
+	 * @param by
 	 */
 	public void clickUsingJavaScript(By by) {
 
@@ -146,19 +142,56 @@ public class BasePage {
 
 	}
 
+	public void intializeWait(){
+
+		wait = new WebDriverWait(webDriverObj, TIMEOUT, POLLING);
+
+	}
+
 	public void waitForElementToAppear(By locator) {
+
+		intializeWait();
+
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
 	}
 
 	public void waitForElementToDisappear(By locator) {
+
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+
 	}
 
 	public void waitForTextToDisappear(By locator, String text) {
+
 		wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+
 	}
 
-	public void isElemenetClickable(By by) {
+	public void waitForAlertToBePresent(By locator){
+
+		wait.until(ExpectedConditions.alertIsPresent());
+
+	}
+
+	public void waitForElementToGetSelected(By locator){
+
+		wait.until(ExpectedConditions.elementToBeSelected(locator));
+
+	}
+
+	// Waiting 30 seconds for an element to be present on the page, checking
+// for its presence once every 5 seconds.
+	public void waitUsingFluent(int Timeout, int polling, By locator){
+
+//		wait = new FluentWait<WebDriver>(webDriverObj)
+//				.withTimeout(30,TimeUnit.SECONDS)
+//				.pollingEvery(5, TimeUnit.SECONDS)
+
+	}
+
+
+	public void isElementClickable(By by) {
 
 		WebDriverWait wait = new WebDriverWait(webDriverObj, 30);
 
@@ -196,7 +229,18 @@ public class BasePage {
 
 		LogUtils.info("Link to Open ======> " + link);
 
-		webDriverObj.get(link);
+		try {
+
+			webDriverObj.get(link);
+
+			// Sets the amount of time to wait for a page load to complete before throwing an error.
+			webDriverObj.manage().timeouts().pageLoadTimeout(TIMEOUT, TimeUnit.SECONDS);
+
+		} catch (TimeoutException e) {
+
+			System.out.println("Page did not loaded within " + TIMEOUT + " seconds!");
+
+		}
 
 		LogUtils.logStep("Open Browser");
 
@@ -568,12 +612,15 @@ public class BasePage {
 	 * Prints all options available in drop down
 	 *
 	 * @param locator
+	 * @return
 	 */
-	public void getAllOptions(By locator) {
+	public List<String> getAllOptions(By locator) {
 
 		Select selectObj = new Select(findElement(locator));
 
 		List<WebElement> l = selectObj.getOptions();
+
+		List<String> dropDownText = new ArrayList<>();
 
 		int i = 0;
 
@@ -581,9 +628,13 @@ public class BasePage {
 
 			System.out.println("Option #" + i + " " + we.getText());
 
+			dropDownText.add(we.getText());
+
 			i++;
 
 		}
+
+		return dropDownText;
 
 	}
 
@@ -653,7 +704,7 @@ public class BasePage {
 
 	}
 
-	public void assertPresent(By loc) {
+	public void assertElementIsPresent(By loc) {
 
 		if (findElement(loc).isDisplayed()) {
 
@@ -791,4 +842,80 @@ public class BasePage {
 
 	}
 
+	public void acceptAlert(){
+
+		webDriverObj.switchTo().alert().accept();
+
+	}
+
+	public void dismissAlert(){
+
+		webDriverObj.switchTo().alert().dismiss();
+
+	}
+
+	public String getAlertText(){
+
+		return webDriverObj.switchTo().alert().getText();
+
+	}
+
+	public void setAlertText(String text){
+
+		webDriverObj.switchTo().alert().sendKeys(text);
+
+	}
+
+	public void switchToWindow(String text){
+
+		for(String winHandle : webDriverObj.getWindowHandles()) {
+
+			if(webDriverObj.switchTo().window(winHandle).getTitle().equalsIgnoreCase("text")) {
+
+				System.out.println("Expected Window Found : " + text);
+
+			}
+		}
+	}
+
+	public  void takeScreenshot(){
+
+		JavaUtil.takeScreenShot(webDriverObj);
+
+	}
+
+	public void goForward(){
+
+		webDriverObj.navigate().forward();
+
+	}
+
+	public void goBack(){
+
+		webDriverObj.navigate().back();
+
+	}
+
+	public void refresh(){
+
+		webDriverObj.navigate().refresh();
+
+	}
+
+	public void navigateTo(String url){
+
+		webDriverObj.navigate().to(url);
+
+	}
+
+	public String getPageSource(){
+
+		return webDriverObj.getPageSource();
+
+	}
+
+	public String getCurrentUrl(){
+
+		return webDriverObj.getCurrentUrl();
+	}
 }
