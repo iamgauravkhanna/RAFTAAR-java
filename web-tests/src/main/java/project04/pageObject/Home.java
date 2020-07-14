@@ -1,4 +1,4 @@
-package web.project04.pageObject;
+package project04.pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

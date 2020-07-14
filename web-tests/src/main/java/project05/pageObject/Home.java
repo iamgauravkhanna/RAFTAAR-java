@@ -21,10 +21,4 @@ public class Home extends BasePage {
 
 	}
 
-	public void clickContactUs() {
-
-		click(By.xpath("//a[text()='Contact us']"));
-
-	}
-
 }

@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import utils.BaseTest;
 import project01.pageObject.Home;
+import utils.TestDataWriter;
 
 /**
  * 
@@ -23,7 +24,37 @@ public class Feature001 extends BaseTest {
 		
 		homePageObj.clickContactUs();
 		
-		 // TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
+
+	}
+
+	@Test
+	public void TC_002() {
+
+		System.out.println( "WebDriverPool Details : " + webDriverPool.get().toString());
+
+		Home homePageObj = new Home(webDriverPool.get());
+
+		homePageObj.openHomePage();
+
+		homePageObj.clickContactUs();
+
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
+
+	}
+
+	@Test
+	public void TC_003() {
+
+		System.out.println( "WebDriverPool Details : " + webDriverPool.get().toString());
+
+		Home homePageObj = new Home(webDriverPool.get());
+
+		homePageObj.openHomePage();
+
+		homePageObj.clickContactUs();
+
+		TestDataWriter.getInstance().getDataDictionary().put("TC_ID", "001");
 
 	}
 

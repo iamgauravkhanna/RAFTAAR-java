@@ -8,11 +8,11 @@
 		<listener class-name="utils.listener.IExecutionListenerImpl" />
 	</listeners>
 
-	<test name="Project 99 - Test 01" parallel="methods"
+	<test name="Project 06 - Test 01" parallel="methods"
 		thread-count="10">
 		<classes>
-			<class name="project99.mix.Feature001" />
+			<class name="project06.theautomatedtester.Feature001" />
 		</classes>
-
 	</test>
+
 </suite>

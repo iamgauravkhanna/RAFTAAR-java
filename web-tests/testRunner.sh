@@ -1,1 +1,1 @@
-mvn clean install -DSuiteFilePath=src/test/resources/suites/web/project01.xml -DEnvironmentFilePath=environment01.properties
+mvn clean install -DSuiteFilePath=src/test/resources/suites/web/project07.xml -DEnvironmentFilePath=environment01.properties
